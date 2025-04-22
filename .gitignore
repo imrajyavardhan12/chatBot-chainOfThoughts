@@ -1,0 +1,31 @@
+# Ignore Python virtual environments
+.venv/
+
+# Ignore Python cache files
+__pycache__/
+*.py[cod]
+
+# Ignore environment and system files
+.env
+*.env
+.DS_Store
+
+# Ignore VSCode settings (if applicable)
+.vscode/
+
+# Ignore Jupyter Notebook checkpoints (if using notebooks)
+.ipynb_checkpoints/
+
+# Ignore requirement.txt if it's auto-generated (optional)
+# requirement.txt
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+
+# Git ignore file itself should not be ignored
+# .gitignore
+
+.streamlit/secrets.toml
+
