@@ -1,9 +1,9 @@
 import json
-from openai import OpenAI
+import openai
 import streamlit as st
 
 
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+openai_api_key = st.secrets["OPENAI_API_KEY"]
 
 system_prompt = """
     You are an helpful AI assistant specialized in solving complex problems by breaking them into smaller problems.
@@ -51,14 +51,13 @@ if query :
 
 
     while True:
-        response = client.chat.completions.create(
+        response = openai.chat.completions.create(
             model="gpt-4o",
             messages = messages,
             response_format={"type": "json_object"},
             max_tokens = 200
         )
 
-    # print(response.choices[0].message.content)
         parsed_response = json.loads(response.choices[0].message.content)
         messages.append({'role':'assistant', 'content' : json.dumps(parsed_response)})
 
