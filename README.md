@@ -8,3 +8,5 @@ A smart chatbot built using the OpenAI API that mimics reasoning by thinking 2-3
 - 🧩 Implements Chain of Thought prompting to simulate step-by-step reasoning.
 - 🗣️ Interactive and intuitive user interface.
 - 🕵️ Reflective thinking before final answer: gives intermediate thoughts (1-3) then the final output.
+
+Check live at : https://chatbot-chainofthoughts-kexki2xz7hbk3zomukny9q.streamlit.app/
